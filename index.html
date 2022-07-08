@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+    <title>Document</title>
+    <script src="v3d.legacy.js"></script>
+    <script src="ikea.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" type="text/css" href="ikea.css">
+</head>
+<body>
+    <div class="loading">
+        <span class="loading-logo"></span>
+    </div>
+    <div class="container">
+        <header>
+            <div class="nav_btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <a href="../cover.html" class="nav_logo"><img src="./assets/img/nav_logo.png" alt="nav_logo.png"></a>
+            <nav>
+                <ul class="nav_list">
+                    <li>Shop</li>
+                    <li>About IKEA</li>
+                    <li>IKEA Museum</li>
+                    <li>International Sales</li>
+                </ul>
+            </nav>
+        </header>
+        <!-- 분해도 modal -->
+        <div class="modal-overlay" onclick="closeModal()"></div>
+        <div class="modal">
+            <div class="swiper mySwiper2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./assets/img/material1.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./assets/img/material2.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./assets/img/material3.png" alt=""></div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="close_modal" onclick="closeModal()">X</div>
+        </div>
+        
+        <!-- step-nav -->
+        <div class="slider_box">
+            <div class="slide slide1 component1 active"></div>
+            <div class="slide slide2 component1" data-num1="5" data-num2="4" data-idvalue="4"></div>
+            <div class="slide slide3 component1" data-num1="9" data-num2="8" data-idvalue="8"></div>
+            <div class="slide slide4 component1" data-num1="13" data-num2="12" data-idvalue="12"></div>
+            <div class="slide slide5 component1" data-num1="17" data-num2="16" data-idvalue="16"></div>
+            <div class="slide slide6 component1" data-num1="21" data-num2="20" data-idvalue="20"></div>
+            <div class="slide slide7 component1" data-num1="25" data-num2="24" data-idvalue="24"></div>
+            <div class="slide slide8 component1" data-num1="29" data-num2="28" data-idvalue="28"></div>
+            <div class="slide slide9 component1" data-num1="33" data-num2="32" data-idvalue="32"></div>
+            <div class="slide slide10 component1" data-num1="37" data-num2="36" data-idvalue="36"></div>
+            <div class="prev_btn slide_arrow"><img src="./assets/img/top.png" alt="prev_arrow.png"></div>
+            <div class="next_btn slide_arrow"><img src="./assets/img/bottom.png" alt="next_arrow.png"></div>
+        </div>
+        <!-- 3D 모델링 -->
+        <div id="v3d-container">
+            <div class="guide-wrap">
+                <div class="guide-text">
+                    <img class="gif" src="./assets/img/scroll-04.gif" alt="arrow">
+                </div>
+            </div>
+            <div class="sub_page" onclick="openModal(this); return false"><img src="./assets/img/equip.png" alt="material.png"></div>
+        </div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+
+                <!-- sec01 -->
+                <div class="swiper-slide sec01 component2"></div>
+                <!-- sec02 -->
+                <div class="swiper-slide sec02 component2" data-component="1"></div>
+                <!-- sec03 -->
+                <div class="swiper-slide sec03 component2" data-component="2"></div>
+                <!-- sec04 -->
+                <div class="swiper-slide sec04 component2" data-component="3"></div>
+                <!-- sec05 -->
+                <div class="swiper-slide sec05 component2" data-component="4"></div>
+                <!-- sec06 -->
+                <div class="swiper-slide sec06 component2" data-component="5"></div>
+                <!-- sec07 -->
+                <div class="swiper-slide sec07 component2" data-component="6"></div>
+                <!-- sec08 -->
+                <div class="swiper-slide sec08 component2" data-component="7"></div>
+                <!-- sec09 -->
+                <div class="swiper-slide sec09 component2" data-component="8"></div>
+                <!-- sec10 -->
+                <div class="swiper-slide sec10 component2" data-component="9"></div>
+                <!-- sec11 -->
+                <div class="swiper-slide sec11 component2" data-component="10"></div>
+                <!-- sec12 -->
+                <div class="swiper-slide sec12 component2" data-component="11"></div>
+                <!-- sec13 -->
+                <div class="swiper-slide sec13 component2" data-component="12"></div>
+                <!-- sec14 -->
+                <div class="swiper-slide sec14 component2" data-component="13"></div>
+                <!-- sec15 -->
+                <div class="swiper-slide sec15 component2" data-component="14"></div>
+                <!-- sec16 -->
+                <div class="swiper-slide sec16 component2" data-component="15"></div>
+                <!-- sec17 -->
+                <div class="swiper-slide sec17 component2" data-component="16"></div>
+                <!-- sec18 -->
+                <div class="swiper-slide sec18 component2" data-component="17"></div>
+                <!-- sec19 -->
+                <div class="swiper-slide sec19 component2" data-component="18"></div>
+                <!-- sec20 -->
+                <div class="swiper-slide sec20 component2" data-component="19"></div>
+                <!-- sec21 -->
+                <div class="swiper-slide sec21 component2" data-component="20"></div>
+                <!-- sec22 -->
+                <div class="swiper-slide sec22 component2" data-component="21"></div>
+                <!-- sec23 -->
+                <div class="swiper-slide sec23 component2" data-component="22"></div>
+                <!-- sec24 -->
+                <div class="swiper-slide sec24 component2" data-component="23"></div>
+                <!-- sec25 -->
+                <div class="swiper-slide sec25 component2" data-component="24"></div>
+                <!-- sec26 -->
+                <div class="swiper-slide sec26 component2" data-component="25"></div>
+                <!-- sec27 -->
+                <div class="swiper-slide sec27 component2" data-component="26"></div>
+                <!-- sec28 -->
+                <div class="swiper-slide sec28 component2" data-component="27"></div>
+                <!-- sec29 -->
+                <div class="swiper-slide sec29 component2" data-component="28"></div>
+                <!-- sec30 -->
+                <div class="swiper-slide sec30 component2" data-component="29"></div>
+                <!-- sec31 -->
+                <div class="swiper-slide sec31 component2" data-component="30"></div>
+                <!-- sec32 -->
+                <div class="swiper-slide sec32 component2" data-component="31"></div>
+                <!-- sec33 -->
+                <div class="swiper-slide sec33 component2" data-component="32"></div>
+                <!-- sec34 -->
+                <div class="swiper-slide sec34 component2" data-component="33"></div>
+                <!-- sec35 -->
+                <div class="swiper-slide sec35 component2" data-component="34"></div>
+                <!-- sec36 -->
+                <div class="swiper-slide sec36 component2" data-component="35"></div>
+                <!-- sec37 -->
+                <div class="swiper-slide sec37 component2" data-component="36"></div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="./assets/js/index.js"></script>
+</body>
+</html>
